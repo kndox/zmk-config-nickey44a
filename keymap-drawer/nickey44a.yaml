@@ -48,20 +48,20 @@ layers:
   '1':
   - ESCAPE
   - ''
-  - {t: RIGHT, h: LCTRL}
+  - Ctl+RIGHT
   - ''
   - ''
   - ''
-  - {t: C, h: LCTRL}
-  - {t: Z, h: LCTRL}
+  - Ctl+C
+  - Ctl+Z
   - ''
   - ''
-  - {t: V, h: LCTRL}
+  - Ctl+V
   - DELETE
   - {t: TAB, h: LCTRL}
   - ''
   - ''
-  - {t: X, h: LCTRL}
+  - Ctl+X
   - ''
   - ''
   - LEFT
@@ -75,7 +75,7 @@ layers:
   - DELETE
   - ''
   - ''
-  - {t: LEFT ARROW, h: LCTRL}
+  - Ctl+LEFT
   - ''
   - ''
   - ''
@@ -137,16 +137,16 @@ layers:
   - RCTRL
   '3':
   - ESCAPE
-  - {t: '1', h: LEFT SHIFT}
-  - {t: '2', h: LEFT SHIFT}
-  - {t: '3', h: LEFT SHIFT}
-  - {t: '4', h: LEFT SHIFT}
-  - {t: '5', h: LEFT SHIFT}
-  - {t: '6', h: LEFT SHIFT}
-  - {t: '7', h: LEFT SHIFT}
-  - {t: '8', h: LEFT SHIFT}
-  - {t: '9', h: LEFT SHIFT}
-  - {t: '0', h: LEFT SHIFT}
+  - '!'
+  - {t: '@', h: toggle}
+  - {t: '#', h: toggle}
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: ▽, type: trans}
   - {t: TAB, h: LCTRL}
   - {t: ▽, type: trans}
