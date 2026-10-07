@@ -34,6 +34,7 @@
     behaviors {
         // Define these after all includes: Keymap Editor may reorder includes.
         // Keep the standard key-press device for ZMK core components.
+
         original_key_press: original_key_press {
             compatible = "zmk,behavior-key-press";
             #binding-cells = <1>;
@@ -41,6 +42,7 @@
         };
 
         // Override &kp here so US-to-JIS conversion survives include sorting.
+
         kp: key_press {
             compatible = "zmk,behavior-layout-shift-key-press";
             #binding-cells = <1>;
@@ -63,8 +65,8 @@
         default_layer {
             bindings = <
 &kp ESC        &kp Q  &kp W  &kp E  &kp R         &kp T                                             &kp Y      &kp U      &kp I      &kp O    &kp P     &kp PIPE
-&mt LCTRL TAB  &kp A  &kp S  &kp D  &kp F         &kp G                                             &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp DOUBLE_QUOTES
-&kp LSHFT      &kp Z  &kp X  &kp C  &kp V         &kp B             &kp F15        &kp PRINTSCREEN  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp TILDE
+&mt LCTRL TAB  &kp A  &kp S  &kp D  &kp F         &kp G                                             &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT      &kp Z  &kp X  &kp C  &kp V         &kp B             &kp F15        &kp PRINTSCREEN  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp GRAVE
                                     &kp LEFT_WIN  &mt LEFT_ALT F14  &lt 1 SPACE    &lt 2 ENTER      &lt 3 F13  &kp RCTRL
             >;
         };
@@ -72,7 +74,7 @@
         layer_1 {
             bindings = <
 &kp ESCAPE      &none  &kp LC(RIGHT)  &none      &none         &none                                     &kp LC(C)  &kp LC(Z)  &none             &none              &kp LC(V)  &kp DELETE
-&mt LCTRL TAB   &none  &none          &kp LC(X)  &none         &none                                     &kp LEFT   &kp DOWN   &kp UP            &kp RIGHT          &kp MINUS  &kp PLUS
+&mt LCTRL TAB   &none  &none          &kp LC(X)  &none         &none                                     &kp LEFT   &kp DOWN   &kp UP            &kp RIGHT          &kp MINUS  &kp EQUAL
 &kp LEFT_SHIFT  &none  &kp DELETE     &none      &none         &kp LC(LEFT)  &none        &none          &none      &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none      &none
                                                  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE    &kp BACKSPACE  &trans     &kp RCTRL
             >;
