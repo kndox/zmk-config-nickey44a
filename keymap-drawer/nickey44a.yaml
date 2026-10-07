@@ -138,8 +138,8 @@ layers:
   '3':
   - ESCAPE
   - '!'
-  - {t: '@', h: toggle}
-  - {t: '#', h: toggle}
+  - '@'
+  - '#'
   - $
   - '%'
   - ^
